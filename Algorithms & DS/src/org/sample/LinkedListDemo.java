@@ -63,18 +63,6 @@ public class LinkedListDemo {
 	    this.head = this.head.getNextNode();
 	}
 	
-	@Override
-	public String toString() {
-	    String result="{";
-	    Node current = this.head;
-	    while(current != null){
-		result += current.toString() + ",";
-		current = current.getNextNode();
-	    }
-	    result += "}";
-	    return result;
-	}
-	
 	public int length(){
 	    int length=0;
 	    Node current = this.head;
@@ -95,6 +83,18 @@ public class LinkedListDemo {
 		current = current.getNextNode();
 	    }
 	    return false;
+	}
+	
+	@Override
+	public String toString() {
+	    String result="{";
+	    Node current = this.head;
+	    while(current != null){
+		result += current.toString() + ",";
+		current = current.getNextNode();
+	    }
+	    result += "}";
+	    return result;
 	}
 	
     }
