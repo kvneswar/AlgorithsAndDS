@@ -10,7 +10,7 @@ public class InsertionSortAlgorithm {
 	for(int i=0; i<intArray.length;i++){
 	    current=intArray[i];
 	    j=i-1;
-	    while(j>=0&&intArray[j]>current){
+	    while(j>=0 && intArray[j]>current){
 		intArray[j+1]=intArray[j];
 		j=j-1;
 		intArray[j+1]=current;
